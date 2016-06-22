@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="QUIZ GAME"
+        android:id="@+id/titleText"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="30dp"
+        android:textColor="#40AAEF"
+        android:background="#FFFFFF" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="left|center_vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NORMAL"
+            android:id="@+id/button_normal"
+            android:layout_weight="1"
+            android:background="#FBA848"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:onClick="onClick" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RANDOM"
+            android:id="@+id/button_random"
+            android:layout_weight="1"
+            android:background="#F27398"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:onClick="onClick" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TIME ATTACK"
+            android:id="@+id/button_time"
+            android:layout_weight="1"
+            android:background="#363947"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:onClick="onClick" />
+    </LinearLayout>
+
+</LinearLayout>
+
