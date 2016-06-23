@@ -1,5 +1,6 @@
 package com.example.mizutani.myapplication;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -22,8 +23,11 @@ public class MainActivity extends AppCompatActivity {
         switch (v.getId()) {
             // タッチされたボタンがノーマルの場合
             case R.id.button_normal:
-                
-                Toast.makeText(this, "ノーマルがタッチされた！", Toast.LENGTH_SHORT).show();
+                // 遷移先のActivityを指定
+                // Intent intent = new　Intent(このクラスから, このクラスへ)
+                Intent intent = new Intent(MainActivity.this, StageSelect.class);
+                //startActivityでアクションをトリガー
+                startActivity(intent);
                 break;
             // タッチされたボタンがランダムの場合
             case R.id.button_random:
