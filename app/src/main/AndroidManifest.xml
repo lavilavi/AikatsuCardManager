@@ -17,7 +17,8 @@
         </activity>
         <activity android:name=".MainGame" />
         <activity android:name=".StageSelect" />
-        <activity android:name=".ImageTest"></activity>
+        <activity android:name=".ImageTest" />
+        <activity android:name=".ScrollTest"></activity>
     </application>
 
 </manifest>
